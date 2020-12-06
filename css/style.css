@@ -1,0 +1,638 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Oswald&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+}
+
+html {scroll-behavior: smooth;}
+html, body { height:100%; width:100%; font-family: 'Montserrat', sans-serif;}
+a { text-decoration:none; }
+a:hover, a:focus, a:active {text-decoration: none;}
+hr {height: 1px;border: none;width: 100%;}
+ul {list-style: none;}
+.wrapper {width: 77%; margin: 0 auto;}
+
+/* NAVBAR */
+#nav {
+  background: rgb(1,54,106);
+  background: linear-gradient(90deg, rgba(1,54,106,1) 0%, rgba(0,87,172,1) 100%);
+  color: #fff;
+}
+.nav-block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 15px 0;
+}
+.nav-block .logo a {
+  text-transform: uppercase;
+  font-weight: bold;
+  color:#fff;
+}
+.nav-block i {
+  color: brown;
+}
+.nav-block .logo:hover {
+  color:#fff;
+}
+.sidenav {
+  display: inline-block;
+}
+.sidenav a {
+  color: #fff;
+  font-size: 1rem;
+  margin-right: 5px;
+}
+.sidenav a:last-child {
+  margin: 0;
+}
+.sidenav a:hover {
+  border-bottom: 1px solid #fff;
+}
+.closebtn, .burger {
+  display: none;
+}
+
+/* НОВИНКИ */
+.newbooks__section {
+  padding-bottom: 70px;
+}
+.newbooks__section h3 {
+  margin-bottom: 30px;
+}
+.newbooks__section .books {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 30px;
+}
+.books .book-item {
+  text-align: center;
+  border: 1px solid #f2f2f2;
+}
+.books .book-item:hover {
+  -webkit-box-shadow: 0px 0px 31px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 31px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 31px 0px rgba(0,0,0,0.75);
+}
+.books .book-item img {
+  margin: 0 auto;
+  width: 170px;
+  height: 240px;
+}
+.books .book-item p, .books .book-item .line {
+  width: 80%;
+  margin: 0 auto;
+}
+.books .line {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+.books .line .price {
+  font-weight: bold;
+}
+.books .line .more {
+  padding: 3px 5px;
+  border: 2px solid brown;
+  color: brown;
+}
+.books .line .more:hover {background-color: brown;}
+.books .line .more:hover a {color: #fff;}
+.books .line .more a {color: brown;}
+
+/*ABOUT SECTION*/
+.about__section {
+  padding-top: 40px;
+}
+.about__section h3 {
+  margin-top: 20px;
+}
+.about__section p {
+  font-size: 1.3rem;
+}
+
+/* ОПЛАТА И ДОСТАВКА */
+.delivery__section {
+  padding: 40px 0;
+}
+.delivery__section h3 {
+  margin-top: 20px;
+  text-align: center;
+}
+.delivery__section .two-blocks {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 40px;
+  margin-top: 40px;
+}
+.two-blocks .block {
+  border: 1px solid #d4d4d4;
+}
+.two-blocks .block h5 {
+  display: block;
+  padding: 20px;
+  margin: 0;
+  border-bottom: 1px solid #d4d4d4;
+  background-color: #f4f4f4;
+}
+.two-blocks .block p {
+  padding: 20px;
+  line-height: 40px;
+}
+.two-blocks .block p span {
+  font-weight: bold;
+}
+
+/*КАТАЛОГ*/
+.catalog-block h3{margin-bottom: 40px;}
+.catalog {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 30px;
+  width: 80%;
+  margin: 0 auto;
+}
+.catalog .available{
+  color: darkred;
+  text-decoration: line-through;
+  font-weight: bold;
+}
+.catalog .book-item:first-child .available{
+  color: darkgreen !important;
+  text-decoration: none;
+}
+/*LOGIN SECTION*/
+.login__section {
+  padding-top: 50px;
+  text-align: center;
+}
+.login__section .bread {
+  text-align: left;
+  margin-bottom: 15px;
+}
+.login__section hr {
+  background-color: #333;
+  width: 150px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+.login__section form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 60%;
+  margin: 0 auto;
+}
+.login__section label {
+  text-align: left;
+  font-weight: bolder;
+  margin: 0;
+}
+.login__section input {
+  padding: 8px;
+  margin-bottom: 15px;
+}
+.login__section button {
+  margin-top: 15px;
+  padding: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: 2px solid brown;
+  background-color: brown;
+  color: #fff;
+  margin-bottom: 5px;
+}
+.login__section button:hover {
+  background-color: #fff;
+  color: brown;
+}
+.login__section select {
+  margin-bottom: 15px;
+}
+
+/* HEADER */
+header {
+  padding: 100px 0;
+  font-family: 'Oswald', sans-serif;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-image: url('../img/bg-bookstore.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.header-container {
+  width: 70%;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 30px 0;
+  
+}
+.header-container h4 {
+  text-transform: uppercase;
+  color: brown;
+}
+.header-container hr {
+  color: #666;
+  background-color: #666; 
+  width: 30%;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.header-container p {
+  margin-bottom: 50px;
+}
+.header-container a {
+  padding: 8px 20px;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: brown;
+  border: 2px solid brown;
+}
+.header-container a:hover {
+  background-color: rgba(0,0,0,0);
+}
+
+
+section.slider__section {
+  padding: 100px 0;
+}
+.slider__section h3 {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+.slider__section hr {
+  color: #333;
+  background-color: #333;
+  width: 150px;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+.slider__section p {
+  font-family: 'Oswald', sans-serif;
+  margin-top: 20px;
+  text-align: right;
+}
+.slider {
+  position: relative;
+  overflow: hidden;
+}
+
+.slider__wrapper {
+  display: flex;
+  transition: transform 0.6s ease;
+}
+
+.slider__item {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.slider__control {
+  position: absolute;
+  top: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  color: #fff;
+  text-align: center;
+  opacity: 0.5;
+  height: 50px;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, .5);
+}
+
+.slider__control:hover,
+.slider__control:focus {
+  color: #fff;
+  text-decoration: none;
+  outline: 0;
+  opacity: .9;
+}
+
+.slider__control_left {
+  left: 0;
+}
+
+.slider__control_right {
+  right: 0;
+}
+
+.slider__control::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: transparent no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.slider__control_left::before {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.slider__control_right::before {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+.slider__item>div {
+  line-height: 250px;
+  font-size: 100px;
+  text-align: center;
+}
+
+/* GO BACK SECTION */
+.go-back__section {
+  background: rgb(1,54,106);
+  background: linear-gradient(90deg, rgba(1,54,106,1) 0%, rgba(0,87,172,1) 100%);
+}
+.go-back__section .content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 15px 0;
+  color: #f2f2f2;
+  font-family: 'Oswald', sans-serif;
+}
+.go-back__section .content h6 {
+  padding-bottom: 3px;
+  border-bottom: 1px solid #f2f2f2;
+}
+.go-back__section .content a {
+  color: #f2f2f2;
+}
+
+
+
+/* FOOTER */
+footer {
+  padding-top: 50px;
+}
+footer hr {
+  margin: 0 auto;
+  color: #f1f1f1;
+  background-color: #f1f1f1;
+  margin-bottom: 20px;
+}
+footer a {
+  color: #111;
+}
+footer .top-line {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 30px;
+}
+footer .menu {
+  display: flex;
+  flex-direction: column;
+}
+footer ul.media li{
+  margin-right: 15px;
+  font-size: 1.7rem;
+}
+footer .bottom-line {
+  border-top: 1px solid #f4f4f4;
+  font-size: 0.7rem;
+  padding: 15px 30px 0;
+  font-weight: bold;
+}
+footer .bottom-line .content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+footer .rights {
+  width: 180px;
+}
+footer .whatsapp i {
+  color: darkgreen;
+}
+
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+/*@media screen and (min-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+} */
+
+@media screen and (max-width: 425px) {
+  .book-item {
+    width: 95% !important;
+  }
+  .go-back__section h6 {
+    font-size: 13px;
+  }
+  footer .top-line {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  footer .media {
+    margin-top: 15px;
+    justify-content: center;
+  }
+}
+
+
+@media screen and (max-width: 576px) {
+  .wrapper {
+    width: 95%;
+  }
+  .header-container {
+    width: 100% !important;
+  }
+  .tel {
+    display: none;
+  }
+  .books {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .newbooks__section h3 {
+    text-align: center !important;
+  }
+  .books .book-item {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .login__section form {
+    width: 85%;
+  }
+  .catalog .book-item {
+    width: 95%;
+  }
+}
+
+/*книга на складе*/
+.book__section {
+  padding: 40px 0;
+}
+.book__section h3 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.book-block {
+  display: grid;
+  grid-column-gap: 50px;
+  grid-template-columns: 1fr 2fr;
+}
+.book-info span {
+  font-weight: bold;
+}
+
+
+/* BOOK SALES АКЦИИ */
+.sale .price {
+  text-decoration: line-through;
+}
+.more.sale {
+  padding: 8px 5px !important;
+}
+.newprice {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: darkorange;
+}
+
+
+/* CONTACT HTML */
+.contact-container p {
+  margin-top: 40px; 
+}
+.contact-container p br {
+  margin-bottom: 20px;
+}
+.contact-container iframe {
+  width: 100%;
+  border: 2px solid #333;
+}
+/*Medium devices (tablets, 768px and up)*/
+@media screen and (max-width: 768px) {
+  .wrapper {
+    width: 90%;
+  }
+  .header-container {
+    width: 95% !important;
+  }
+  .whatsapp {
+    display: none;
+  }
+  .tel {
+    width: 150px;
+  }
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media screen and  (max-width: 992px) {
+ /* The side navigation menu */
+  .closebtn, .burger { display: block !important; }
+  .burger { font-size: 1rem;float: right;}
+  
+  .sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #f4f4f4; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    border-top: 1px solid #111;
+    border-bottom: 1px solid #111;
+    color: #111;
+    background-color: #f2f2f2;
+  }
+
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  .header-container {
+    width: 85%;
+  }
+
+  .delivery__section .two-blocks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .delivery__section .two-blocks .block:not(last-child) {
+    margin-bottom: 30px;
+  }
+  .delivery__section .two-blocks .block:last-child {
+    margin: 0;
+  }
+
+  .book-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .book-block img {
+    margin: 0 auto;
+    margin-bottom: 30px;
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .books {
+    grid-template-columns: 1fr 1fr !important;
+    grid-row-gap: 30px;
+  }
+  .books .book-item .name {
+    font-size: 1.15rem !important; 
+  }
+  .books .book-item .line {
+    font-size: 1rem;
+  }
+}
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media screen and (max-width: 1354px) {
+  .books .book-item .name {
+    font-size: 14px;
+  }
+}
+
+
+
